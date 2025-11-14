@@ -1,0 +1,500 @@
+/* ============================
+   VARIÁVEIS DE COR E BASE
+   ============================ */
+:root {
+  --color-dark: #2f2f2f;
+  --color-primary: #fe6f27;
+  --color-light: #ffffff;
+}
+
+/* Reset simples para garantir melhor visual entre navegadores */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--color-dark);
+  margin: 0;
+  padding-top: 72px; /* espaço para navbar fixa */
+  background-color: #f7f7f7;
+}
+
+/* Links padrão */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   NAVBAR
+   ============================ */
+.navbar-main {
+  background-color: var(--color-dark);
+}
+
+.navbar-main .nav-link {
+  font-weight: 500;
+}
+
+.navbar-main .nav-link.active,
+.navbar-main .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.logo-icon {
+  font-size: 1.4rem;
+}
+/* LOGO NO NAVBAR */
+.logo-nav {
+  height: 62px;          /* altura ideal para navbar */
+  width: auto;           /* mantém proporção */
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 575.98px) {
+  .logo-nav {
+    height: 34px;        /* um pouco menor no mobile */
+  }
+}
+/* ============================
+   HERO SECTION (HOME)
+   ============================ */
+.hero-section {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f3f3f3 50%, #f0f0f0 100%);
+}
+
+.hero-copy h1 {
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-copy h1 .text-primary {
+  color: var(--color-primary) !important;
+}
+
+.hero-copy .lead {
+  margin-top: 1rem;
+}
+
+.hero-badge {
+  background-color: rgba(254, 111, 39, 0.1);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.hero-benefits li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+/* Wrapper do carrossel com esmaecimento à esquerda */
+.hero-carousel-wrapper {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+}
+
+.hero-carousel-img {
+  height: 360px;
+  object-fit: cover;
+}
+
+/* Gradiente de esmaecimento para o lado esquerdo do carrossel */
+.hero-fade-left {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.6) 20%,
+    transparent 55%
+  );
+}
+
+/* Ajuste de altura do hero em telas maiores */
+@media (min-width: 992px) {
+  .hero-section {
+    padding: 5rem 0 4rem;
+  }
+
+  .hero-carousel-img {
+    height: 420px;
+  }
+}
+
+/* ============================
+   SEÇÕES GENÉRICAS
+   ============================ */
+.section-padding {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* ============================
+   SOBRE / INFO PILLS
+   ============================ */
+.info-pill {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  font-size: 0.9rem;
+}
+
+/* Card de destaque laranja */
+.highlight-card {
+  background: radial-gradient(circle at top left, rgba(254, 111, 39, 0.16), #ffffff);
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-card h3 {
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
+
+.highlight-card ul {
+  padding-left: 1.1rem;
+}
+
+/* ============================
+   PLANOS - CARDS
+   ============================ */
+.plan-card {
+  border-radius: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
+}
+
+.plan-img {
+  height: 170px;
+  object-fit: contain;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+
+.plan-card .card-title {
+  font-weight: 700;
+}
+
+/* Destaque do plano proprietário no carrossel */
+.highlight-plan {
+  background: linear-gradient(135deg, #ffffff 0%, #ffe6d7 100%);
+  border-color: rgba(254, 111, 39, 0.267);
+}
+
+.car-img-top {
+    object-fit: contain;
+}
+
+/* Setas do carrossel em laranja (cor primária #fe6f27) */
+#planosCarousel .carousel-control-prev-icon,
+#planosCarousel .carousel-control-next-icon {
+  filter: invert(56%) sepia(99%) saturate(1964%) hue-rotate(0deg) brightness(101%) contrast(101%);
+}
+
+/* Caso queira deixar as setas maiores */
+#planosCarousel .carousel-control-prev-icon,
+#planosCarousel .carousel-control-next-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+/* ============================
+   CARDS DE INFORMAÇÕES
+   ============================ */
+.info-card {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
+}
+
+.info-card i {
+  color: var(--color-primary);
+}
+
+/* ============================
+   COMO FUNCIONA / TIMELINE
+   ============================ */
+.timeline-list {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+}
+
+.timeline-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-list li::before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+.timeline-list li::after {
+  content: "";
+  position: absolute;
+  left: 0.92rem;
+  top: 0.75rem;
+  width: 2px;
+  height: calc(100% - 0.75rem);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Checklist lado direito */
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checklist-item {
+  display: flex;
+  gap: 0.75rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.checklist-item i {
+  font-size: 1.6rem;
+  color: var(--color-primary);
+}
+
+/* ============================
+   FAQ (Accordion)
+   ============================ */
+.accordion-button:not(.collapsed) {
+  background-color: rgba(254, 111, 39, 0.06);
+  color: var(--color-dark);
+}
+
+/* ============================
+   CONTATO
+   ============================ */
+#contato .form-control,
+#contato .form-select {
+  border-radius: 0.75rem;
+}
+/* ============================
+   ACCORDION - INDUSTRIAL DARK
+   (só estiliza .accordion)
+   ============================ */
+
+.accordion {
+  background: transparent;
+}
+
+/* Item do accordion - “placa” escura */
+.accordion .accordion-item {
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+  background: #252525; /* um pouco mais claro que #2f2f2f pra destacar */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+}
+
+/* Cabeçalho */
+.accordion .accordion-button {
+  background: #252525;
+  color: #f4f4f4;
+  font-weight: 600;
+  padding: 1rem 1.2rem;
+  border: none;
+  box-shadow: none;
+}
+
+/* Borda separando header do corpo */
+.accordion .accordion-button:not(.collapsed) {
+  background: linear-gradient(
+    135deg,
+    #2f2f2f 0%,
+    #252525 40%,
+    rgba(254, 111, 39, 0.18) 100%
+  );
+  color: #ffffff;
+  border-bottom: 1px solid rgba(254, 111, 39, 0.45);
+}
+
+/* Hover leve no cabeçalho */
+.accordion .accordion-button:hover {
+  background-color: #2a2a2a;
+}
+
+/* Foco (quando clica) */
+.accordion .accordion-button:focus {
+  box-shadow: 0 0 0 0.12rem rgba(254, 111, 39, 0.6);
+}
+
+/* Corpo */
+.accordion .accordion-body {
+  background: #202020;
+  color: #e0e0e0;
+  padding: 1rem 1.2rem 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Ícone “setinha” */
+.accordion .accordion-button::after {
+  filter: invert(80%) brightness(1.2); /* seta clara */
+}
+
+/* Quando aberto, deixa o ícone com tom laranja */
+.accordion .accordion-button:not(.collapsed)::after {
+  filter: invert(65%) sepia(95%) saturate(1600%) hue-rotate(5deg) brightness(1.05);
+}
+
+/* Opcional: leve “linha” lateral laranja quando aberto */
+.accordion .accordion-collapse.show {
+  border-left: 3px solid #fe6f27;
+  border-bottom-left-radius: 10px;
+}
+/* ============================
+   SUBPAGES HERO (motos, cadastro)
+   ============================ */
+.subpage-hero {
+  padding: 5rem 0 3rem;
+  background: linear-gradient(135deg, #2f2f2f 0%, #3e3e3e 35%, #fe6f27 100%);
+  color: #ffffff;
+}
+
+.subpage-hero h1 {
+  font-weight: 700;
+}
+
+/* ============================
+   CARDS DE MOTOS (motos.html)
+   ============================ */
+.moto-card {
+  border-radius: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+}
+
+.moto-card img {
+  height: 190px;
+  object-fit: cover;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+
+/* ============================
+   RODAPÉ
+   ============================ */
+.footer-main {
+  background-color: #1f1f1f;
+  color: #e5e5e5;
+  padding: 2.5rem 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-main a {
+  color: #f1f1f1;
+}
+
+.footer-main a:hover {
+  color: var(--color-primary);
+}
+
+/* ============================
+   BOTÃO FLUTUANTE WHATSAPP
+   ============================ */
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 50%;
+  background-color: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.6rem;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+  z-index: 999;
+}
+
+.whatsapp-float:hover {
+  text-decoration: none;
+  background-color: #1ebe5a;
+}
+
+/* ============================
+   BOTÕES
+   ============================ */
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: #e15510;
+  border-color: #e15510;
+}
+
+/* ============================
+   RESPONSIVIDADE
+   ============================ */
+
+/* Ajustes para tablets e celulares */
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 64px;
+  }
+
+  .hero-section {
+    padding-top: 3.5rem;
+  }
+
+  .hero-carousel-img {
+    height: 260px;
+  }
+
+  .subpage-hero {
+    padding: 4.5rem 0 2.5rem;
+  }
+}
+
+/* Ajustes específicos para telas bem pequenas */
+@media (max-width: 575.98px) {
+  .hero-copy h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-copy .lead {
+    font-size: 0.95rem;
+  }
+
+  .section-padding {
+    padding: 3rem 0;
+  }
+}

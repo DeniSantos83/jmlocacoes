@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motos e Planos - JM Locações</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+  <!-- Bootstrap Icons -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  >
+  <!-- CSS customizado -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- NAVBAR reaproveitada -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-main fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.png" alt="JM Locações" class="logo-nav">
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#mainNavbar" 
+        aria-controls="mainNavbar" 
+        aria-expanded="false" 
+        aria-label="Alternar navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <!-- Links apontando para a home -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#inicio">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#sobre">Sobre a empresa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#planos">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contato">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro.html">Solicitar orçamento</a>
+          </li>
+        </ul>
+        <a href="cadastro.html" class="btn btn-primary ms-lg-3 mt-2 mt-lg-0">
+          Faça seu pré-cadastro
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cabeçalho da página -->
+  <header class="subpage-hero">
+    <div class="container">
+      <h1>Motos e planos detalhados</h1>
+      <p class="mb-0">
+        Confira as categorias de motos disponíveis e a faixa de valores dos
+        principais planos. Os valores podem variar conforme análise e promoção.
+      </p>
+    </div>
+  </header>
+
+  <!-- Seção de motos (cards) -->
+  <section class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Nossa frota</h2>
+      <div class="row g-4">
+        <!-- POP 110 -->
+        <div class="col-md-6 col-lg-4" id="pop110">
+          <div class="card moto-card h-100">
+            <img src="img/pop110.jpg" class="card-img-top" alt="Honda Pop 110i">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Honda Pop 110i</h5>
+              <p class="card-text small">
+                Motor 110cc, câmbio semi-automático, excelente consumo e ideal 
+                para entregas leves e deslocamentos curtos pela cidade.
+              </p>
+              <ul class="list-unstyled small mb-3">
+                <li><strong>Uso ideal:</strong> Delivery leve, uso urbano.</li>
+                <li><strong>Consumo médio:</strong> até 40–45 km/L*</li>
+              </ul>
+              <div class="mt-auto">
+                <p class="small text-uppercase text-muted mb-1">Faixa de valores</p>
+                <p class="mb-0"><strong>Diária:</strong> a partir de R$ 45,00</p>
+                <p class="mb-0"><strong>Semanal:</strong> a partir de R$ 280,00</p>
+                <p class="mb-0"><strong>Plano Proprietário:</strong> parcelas semanais a partir de R$ 220,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yamaha Factor -->
+        <div class="col-md-6 col-lg-4" id="factor">
+          <div class="card moto-card h-100">
+            <img src="img/factor.jpg" class="card-img-top" alt="Yamaha Factor 125">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Yamaha Factor 125</h5>
+              <p class="card-text small">
+                Moto confiável, confortável e econômica, muito usada por 
+                entregadores de aplicativo pela sua robustez.
+              </p>
+              <ul class="list-unstyled small mb-3">
+                <li><strong>Uso ideal:</strong> Aplicativos, uso diário intenso.</li>
+                <li><strong>Consumo médio:</strong> até 35–40 km/L*</li>
+              </ul>
+              <div class="mt-auto">
+                <p class="small text-uppercase text-muted mb-1">Faixa de valores</p>
+                <p class="mb-0"><strong>Diária:</strong> a partir de R$ 50,00</p>
+                <p class="mb-0"><strong>Semanal:</strong> a partir de R$ 300,00</p>
+                <p class="mb-0"><strong>Plano Proprietário:</strong> parcelas semanais a partir de R$ 230,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shineray JEF 150 -->
+        <div class="col-md-6 col-lg-4" id="jef150">
+          <div class="card moto-card h-100">
+            <img src="img/jef150.jpg" class="card-img-top" alt="Shineray JEF 150">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Shineray JEF 150</h5>
+              <p class="card-text small">
+                Alternativa acessível na categoria 150cc, indicada para
+                quem quer custo mais baixo de entrada.
+              </p>
+              <ul class="list-unstyled small mb-3">
+                <li><strong>Uso ideal:</strong> Autônomos e microempreendedores.</li>
+                <li><strong>Consumo médio:</strong> até 35 km/L*</li>
+              </ul>
+              <div class="mt-auto">
+                <p class="small text-uppercase text-muted mb-1">Faixa de valores</p>
+                <p class="mb-0"><strong>Diária:</strong> a partir de R$ 45,00</p>
+                <p class="mb-0"><strong>Semanal:</strong> a partir de R$ 270,00</p>
+                <p class="mb-0"><strong>Plano Proprietário:</strong> parcelas semanais a partir de R$ 220,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CG 160 -->
+        <div class="col-md-6 col-lg-4" id="cg160">
+          <div class="card moto-card h-100">
+            <img src="img/cg160.jpg" class="card-img-top" alt="Honda CG 160">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Honda CG 160</h5>
+              <p class="card-text small">
+                Uma das motos mais tradicionais do Brasil, unindo conforto,
+                resistência e facilidade de manutenção.
+              </p>
+              <ul class="list-unstyled small mb-3">
+                <li><strong>Uso ideal:</strong> Trabalho diário e médias distâncias.</li>
+                <li><strong>Consumo médio:</strong> até 35 km/L*</li>
+              </ul>
+              <div class="mt-auto">
+                <p class="small text-uppercase text-muted mb-1">Faixa de valores</p>
+                <p class="mb-0"><strong>Diária:</strong> a partir de R$ 55,00</p>
+                <p class="mb-0"><strong>Semanal:</strong> a partir de R$ 330,00</p>
+                <p class="mb-0"><strong>Plano Proprietário:</strong> parcelas semanais a partir de R$ 240,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bros 160 -->
+        <div class="col-md-6 col-lg-4" id="bros160">
+          <div class="card moto-card h-100">
+            <img src="img/bros160.jpg" class="card-img-top" alt="Honda NXR 160 Bros">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Honda NXR 160 Bros</h5>
+              <p class="card-text small">
+                Indicada para quem pega vias esburacadas, estradas de barro
+                e precisa de mais conforto em terrenos irregulares.
+              </p>
+              <ul class="list-unstyled small mb-3">
+                <li><strong>Uso ideal:</strong> Estradas mistas e rota urbana com buracos.</li>
+                <li><strong>Consumo médio:</strong> até 30–35 km/L*</li>
+              </ul>
+              <div class="mt-auto">
+                <p class="small text-uppercase text-muted mb-1">Faixa de valores</p>
+                <p class="mb-0"><strong>Diária:</strong> a partir de R$ 60,00</p>
+                <p class="mb-0"><strong>Semanal:</strong> a partir de R$ 360,00</p>
+                <p class="mb-0"><strong>Plano Proprietário:</strong> parcelas semanais a partir de R$ 250,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Crosser ABS -->
+        <div class="col-md-6 col-lg-4" id="crosser">
+          <div class="card moto-card h-100">
+            <img src="img/crosser.jpg" class="card-img-top" alt="Yamaha Crosser ABS">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Yamaha Crosser ABS</h5>
+              <p class="card-text small">
+                Segurança extra com freios ABS e conforto superior 
+                para quem roda muitas horas por dia.
+              </p>
+              <ul class="list-unstyled small mb-3">
+                <li><strong>Uso ideal:</strong> Jornada longa e trechos mistos.</li>
+                <li><strong>Consumo médio:</strong> até 30–35 km/L*</li>
+              </ul>
+              <div class="mt-auto">
+                <p class="small text-uppercase text-muted mb-1">Faixa de valores</p>
+                <p class="mb-0"><strong>Diária:</strong> a partir de R$ 65,00</p>
+                <p class="mb-0"><strong>Semanal:</strong> a partir de R$ 380,00</p>
+                <p class="mb-0"><strong>Plano Proprietário:</strong> parcelas semanais a partir de R$ 260,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="small text-muted mt-3">
+        *Consumo aproximado informado pela fabricante/mercado. Os valores apresentados 
+        são estimativas para referência e podem ser ajustados conforme análise, época 
+        e promoções da JM Locações.
+      </p>
+    </div>
+  </section>
+
+  <!-- TABELA DE PLANOS DETALHADOS -->
+  <section id="planos-detalhados" class="section-padding bg-light">
+    <div class="container">
+      <h2 class="section-title">Planos detalhados</h2>
+
+      <div class="table-responsive">
+        <table class="table table-striped align-middle small">
+          <thead>
+            <tr>
+              <th>Moto / Categoria</th>
+              <th>Diária (a partir de)</th>
+              <th>Semanal (a partir de)</th>
+              <th>Mensal estimado</th>
+              <th>Plano Proprietário (semana)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Honda Pop 110i (POP/CUB)</td>
+              <td>R$ 45,00</td>
+              <td>R$ 280,00</td>
+              <td>R$ 980,00</td>
+              <td>R$ 220,00</td>
+            </tr>
+            <tr>
+              <td>Yamaha Factor 125 (Street 125)</td>
+              <td>R$ 50,00</td>
+              <td>R$ 300,00</td>
+              <td>R$ 1.050,00</td>
+              <td>R$ 230,00</td>
+            </tr>
+            <tr>
+              <td>Shineray JEF 150 (150)</td>
+              <td>R$ 45,00</td>
+              <td>R$ 270,00</td>
+              <td>R$ 950,00</td>
+              <td>R$ 220,00</td>
+            </tr>
+            <tr>
+              <td>Honda CG 160 (Street 160)</td>
+              <td>R$ 55,00</td>
+              <td>R$ 330,00</td>
+              <td>R$ 1.150,00</td>
+              <td>R$ 240,00</td>
+            </tr>
+            <tr>
+              <td>Honda NXR 160 Bros (Trail 160)</td>
+              <td>R$ 60,00</td>
+              <td>R$ 360,00</td>
+              <td>R$ 1.250,00</td>
+              <td>R$ 250,00</td>
+            </tr>
+            <tr>
+              <td>Yamaha Crosser ABS (Trail ABS)</td>
+              <td>R$ 65,00</td>
+              <td>R$ 380,00</td>
+              <td>R$ 1.300,00</td>
+              <td>R$ 260,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="small text-muted">
+        Estes valores são uma média de mercado em Aracaju e podem ser alterados
+        a qualquer momento. A confirmação dos valores finais será feita no contrato,
+        após análise de cadastro e tipo de uso.
+      </p>
+
+      <div class="mt-4">
+        <a href="cadastro.html" class="btn btn-primary me-2">
+          Quero fazer meu pré-cadastro
+        </a>
+        <a href="index.html#contato" class="btn btn-outline-dark">
+          Falar com atendimento
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ igual ao da home -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="d-flex align-items-center mb-3">
+            <!-- Logomarca -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.png" alt="JM Locações" class="logo-nav">
+      </a>
+          </h5>
+          <p class="small">
+            Aluguel de motos com planos flexíveis e a opção de se tornar 
+            dono da moto ao final do contrato.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h6>Mapa do site</h6>
+          <ul class="list-unstyled small">
+            <li><a href="index.html#inicio">Início</a></li>
+            <li><a href="index.html#sobre">Sobre a empresa</a></li>
+            <li><a href="index.html#planos">Planos</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+            <li><a href="motos.html">Motos e planos detalhados</a></li>
+            <li><a href="cadastro.html">Pré-cadastro</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Contato</h6>
+          <ul class="list-unstyled small">
+            <li><i class="bi bi-telephone me-2"></i>(79) 9 9999-9999</li>
+            <li><i class="bi bi-envelope me-2"></i>contato@jmlocacoes.com.br</li>
+            <li><i class="bi bi-whatsapp me-2"></i>Atendimento via WhatsApp</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="mt-4 mb-3">
+      <div class="d-flex flex-wrap justify-content-between align-items-center small">
+        <span>© <span id="currentYear"></span> JM Locações • Aracaju - SE</span>
+        <span>Site desenvolvido por <strong>Deni Santos</strong></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Falar no WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
